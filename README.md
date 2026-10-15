@@ -52,7 +52,7 @@ Retrieval uses cosine similarity (normalised vectors with an inner-product index
 │   ├── rag.py               # builds the prompt and asks the LLM
 │   └── llm.py               # plain LLM call without retrieval (for comparison)
 ├── evaluation/
-│   ├── questions.json       # example question set (see Evaluation)
+│   ├── questions.json       # your question set (create it, see Evaluation)
 │   └── rag_eval.py          # scoring script
 ├── data/documents/          # put your PDF here (not tracked by git)
 └── vectorstore/             # generated index (not tracked by git)
@@ -153,7 +153,7 @@ Results are written to `evaluation/results.json`.
 
 ### Writing your own question set
 
-`evaluation/questions.json` is a list of entries. The bundled file is an example written for a different document, so **replace it with questions about your own PDF**:
+`evaluation/questions.json` is a list of entries. It is not included in the repo, so **create it with questions about your own PDF**:
 
 ```json
 {
