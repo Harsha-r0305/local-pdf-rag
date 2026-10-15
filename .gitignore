@@ -1,0 +1,17 @@
+# secrets
+.env
+
+# virtual environment and caches
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# your documents and generated index (keep the folders, not the contents)
+data/documents/*
+!data/documents/.gitkeep
+vectorstore/*
+!vectorstore/.gitkeep
+
+# regenerable outputs
+evaluation/results.json
